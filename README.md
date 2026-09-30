@@ -128,6 +128,27 @@ Python Software Foundation. Python 3.12 Documentation — Modules and Packages.
 
 VITyarthi Project Guidelines.
 
+
+
+
++-----------------------------------------------------------------------+
+|                             User Menu (main.py)                       |
++-----------------------------------------------------------------------+
+                                    |
+             +----------------------+----------------------+
+             |                                             |
+             v                                             v
+[ Account Creation / Metadata ]              [ Financial Transactions ]
+(account_management.py)                     (financial_operations.py)
+     |                                             |
+     +--> 1. Validate PIN (helpers.py)             +--> 1. Validate Account & PIN
+     +--> 2. Generate ID via idgen()               +--> 2. Check Balance / Status
+     +--> 3. Write Record to database.py           +--> 3. Perform Debit/Credit
+                                                   +--> 4. Append Audit History Log
+                                                           |
+                                                           v
+                                                  [ Write to database.py ]
+
  
 
  
